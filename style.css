@@ -1,0 +1,110 @@
+body{
+    display: grid;
+    grid-auto-columns: 3fr;
+    gap: 10px;
+    border-style: solid;
+    grid-template-areas: 
+    "header header header "
+    "nav    nav     nav"
+    "main   aside    aside"
+    "footer footer  footer"
+    ;
+}
+
+header{
+    grid-area: header;
+    background-color: blue;
+    color: white;
+    font-family: Verdana, Geneva, sans-serif;
+    border-bottom: black solid;  
+   border-style: solid 5px;
+   text-align: center;   
+   grid-column: 1 / 4;
+   display: grid;
+   grid-template-columns: 6fr 1fr;
+}
+
+header img {
+    clip-path: circle(50% at 50% 50%);
+    width: 35px;
+    height: 35px;   
+    opacity: 60%;
+    vertical-align:   middle    ;
+    
+    
+}
+
+
+nav{
+        grid-area: nav;
+        color: black;
+       text-align: right;
+       border-top: solid;
+       border-bottom: solid;
+       padding: 10px;
+     
+}
+
+nav img{
+    width: 15px; height: 15px;
+}
+
+
+main{
+    
+        grid-area: main;
+        background-color:lightblue;
+        display: grid;
+        align-items: stretch;
+        gap: 20px;
+        border: solid black;
+        padding: 10px;
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+        text-align: center;
+        margin: 10px;
+        
+      
+} 
+
+main article{
+    border-style: solid;
+    background-color: white;
+    border-radius: 20px ;
+
+    
+}
+
+aside{
+    grid-area: aside;
+    background-color:lightblue;
+    display: grid;
+    align-items: center;
+    justify-items: center ;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    border-style: solid;
+    text-align:left;
+    margin: 10px;
+}
+
+textarea{
+    resize: none;
+    width: 280px;
+    height: 40px;
+}
+
+
+
+footer{
+    grid-area: footer;
+    background-color: cornflowerblue;
+    border-top: black solid; 
+    border-bottom: black solid;   
+    margin-bottom: 10px;    
+padding: 10px ;
+text-align: center  ;
+columns: 3 ;
+    
+}
+

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tarea N1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Sistema integrado de gestión</h1>
+        <p><img src="imagenes/usuario.png" alt="usuario" >Usuario 1</p>
+                       
+    </header>
+
+    <nav>
+        <form>
+        <label for="texto_buscar"> Busqueda en la web </label>
+        <input type="search" id="texto_buscar" >
+        <button id="buscador">
+            <img id="buscador" src="Imagenes/descarga.png" alt="descarga">
+            <figcaption>Buscar</figcaption>
+        </form>
+    </nav>
+    <main>
+        <h1>Menú</h1>
+        <article>
+            <h4>Agregar Producto</h4>
+            <img src="imagenes/añadir.png" alt="añadir" width="50px" height="50px">
+        </article>
+
+        <article>
+            <h4>Administrar categorías</h4>
+            <img src="imagenes/administrar.png" alt="administrar" width="50px" height="50px">
+
+        </article>
+        <article>
+            <h4>Existencias</h4>
+            <img src="imagenes/existencia.png" alt="existencia" width="50px" height="50px">
+
+        </article>
+        <article>
+            <h4 >Administrar pagos</h4>
+            <img src="imagenes/tarjeta.png" alt="tarjeta" width="50px" height="50px">
+
+        </article>
+    </main>
+
+    <aside>
+        <fieldset>
+            <legend >Agregar Producto </legend>
+            <form action="empelado" method="POST">
+                <label type="codigo">Codigo*:</label>
+                <input type="tel" id="codigo" maxlength="6"  pattern="[0-9]{6}" title="Deben ser números" required> </text>
+                <button type="button"> Validar </button>
+                <br>
+                <br>
+                <label for="Nombre">Nombre*</label>
+                <input type="text" id="Nombre" maxlength="100" placeholder="Solo letras y numeros" pattern="[a-zA-Z 0-9]{2,100}" title="Deben ser letras o números"required ></text>
+                <br>
+                <br>
+                <label for="Abreviatura">Abreviatura*</label>
+                <input type="text" id="Abreviatura" maxlength="10" placeholder="Solo letras" pattern="[a-zA-Z\s]{2,50}" title="Deben ser letras" required></text>
+                <br>
+                <br>
+                Categoría*<select id="Categoria">
+                <option>Panes especiales</option>
+                <option>Lácteos</option>        
+                <option>Pasteles</option>
+                </select>
+                <br>
+                <br>
+                <label for="RUC">RUC proveedor*</label>
+                <input type="tel" id="codigo" maxlength="20" pattern="{0-9}" title="Solo números" required></text>
+                <br>
+                <br>    
+                <label for="Precio">Precio*</label>
+                <input type="number" step="1.11" min="0.10" max="no" required>
+                <br>
+                <br>
+                <label for="Color">Color de etiqueta</label>
+                <input type="color" id="color" >
+                <br>
+                <br>
+                <label for="fecha" >Fecha*</label>
+                <input type="date" id="fecha" required>
+                <br>
+                <br>
+                Estado*
+                <input type="radio" id="Activo" name="Estado"required>
+                <label for="Activo">Activo</label>
+                <input type="radio" id="Suspendido" name="Estado"required>
+                <label for="Suspendido">Suspendido</label>
+                <input type="radio" id="De baja"name="Estado" required>
+                <label for="De baja">De baja</label>
+                <br>
+                <br>
+                <label for="Afecto">Afecto a impuesto*</label>
+                <input type="checkbox" id="Afecto a impuesto"name="Afecto a impuesto">
+                <br>
+                <br>
+                Foto <input accept="image/png,image/jpeg" id="file" type="file">
+                <br>
+                <br>
+                <label for="Descripcion">Descripcion</label>
+                <textarea id="Descripcion"></textarea>
+                <br>
+                <br>
+                <button type="submit" value="enviar">Grabar</button>
+                <button type="reset" value="reset">Limpiar</button>
+
+            </form>
+
+        </fieldset>
+
+     </aside>
+    <footer>
+ <p><a href="Quehacemos.html" target="blank">¿Qué hacemos?</a></p>
+ <p><a href="Enlaces.html" target="blank">Enlaces principales</a>  </p>
+ <p><a href="Contactanos.html" target="blank">Contáctanos</a>    </p>
+    </footer>
+</body>
+
+</html>
